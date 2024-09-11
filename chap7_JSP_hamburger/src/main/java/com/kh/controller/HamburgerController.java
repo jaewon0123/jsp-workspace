@@ -27,6 +27,6 @@ public class HamburgerController {
 	@PostMapping("/addHamburger")
 	public String addHamburger(Hamburger hamburger) {
 		hamburgerService.addHamburger(hamburger);
-		return "redirect:/hamburgerlist";
+		return "redirect:/hamburgerlist"; // redirect 다시 불러올 api주소를 작성 
 	}
 }
